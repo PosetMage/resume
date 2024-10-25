@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 10px; /* Add padding for better appearance on mobile */
+    font-size: 10.5pt;
+    line-height: 1.2;
+}
+
+@page {
+    margin: 7mm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;  /* Adds spacing between items */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+}
+
+.experience-item {
+    margin-bottom: 10px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    flex-wrap: wrap; /* Stack items on mobile if necessary */
+}
+
+.company {
+    font-weight: bold;
+}
+
+.duration {
+    color: #666;
+}
+
+.position {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+li:before {
+    content: "•";
+    position: absolute;
+    left: -15px;
+    color: #333;
+    font-size: 0.8em;
+}
+
+.technical-skills {
+    font-size: 1em;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+.education {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+    flex-wrap: wrap; /* Stacks items on mobile */
+}
+
+.education div:first-child {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.education div:last-child {
+    text-align: right;
+}
+
+/* Mobile Styles */
+@media (max-width: 800px) {
+    body {
+        font-size: 15pt;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-title {
+        font-size: 1.1em;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education div:last-child {
+        text-align: left;
+    }
+}

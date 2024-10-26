@@ -12,7 +12,7 @@ for root, dirs, files in os.walk(directory):
             # Construct the full path to the HTML file
             html_file = os.path.join(root, file)
             # Define the output PDF file name, same location as HTML file
-            output_pdf = os.path.join(root, "resume.pdf")
+            output_pdf = os.path.join(root, "Sidney_Lu.pdf")
 
             # Try converting HTML to PDF
             try:

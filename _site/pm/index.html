@@ -1,54 +1,40 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">      
-    <title>Sidney Lu</title>
-    <style>
-        html, body {
-
-            height: calc(100% - 5px);
-            margin: 0;
-        }
-        /* Styling for the download container positioned in the top-right corner */
-        .download-container {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-            padding: 5px 10px;
-            border-radius: 5px;
-            z-index: 10; /* Ensures it stays on top of the iframe */
-        }
-        .download-link {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-            font-size: 0.9em;
-        }
-        .download-link:hover {
-            text-decoration: underline;
-        }
-        .icon {
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-        /* Full viewport iframe */
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="download-container">
-        <a class="download-link" href="./Sidney_Lu.pdf" download="Sidney_Lu.pdf">
-            <img class="icon" src="https://img.icons8.com/material-outlined/24/000000/pdf.png" alt="PDF Icon"/>
-            Download PDF
-        </a>
-    </div>
-    <iframe src="./resume.html" title="Resume"></iframe>
+    <h1>Loading content...</h1> <!-- A placeholder message while loading -->
+
+    <script>
+        // Function to fetch and load the content of /index.html
+        async function loadContent() {
+            try {
+                const response = await fetch('/index.html'); // Fetch the content of /index.html
+                const text = await response.text(); // Get the text content
+
+                // Create a new DOM parser
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(text, 'text/html'); // Parse the fetched HTML
+
+                // Get head and body content
+                const headContent = doc.head.innerHTML; // Extract head content
+                const bodyContent = doc.body.innerHTML; // Extract body content
+
+                // Insert head content into the current page's head
+                document.head.innerHTML += headContent; // Append head content
+                // Insert body content into the current page's body
+                document.body.innerHTML = bodyContent; // Replace body content
+
+            } catch (error) {
+                console.error('Error loading index.html:', error);
+                document.body.innerHTML = '<p>Error loading content.</p>'; // Show error message if fetch fails
+            }
+        }
+
+        // Call the function to load content
+        loadContent();
+    </script>
 </body>
 </html>

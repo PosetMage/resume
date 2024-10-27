@@ -1,6 +1,6 @@
 # Resume
 
-## resume
+## general resume
 * website: https://resume.posetmage.com/
 * pdf: https://resume.posetmage.com/Sidney_Lu.pdf
 

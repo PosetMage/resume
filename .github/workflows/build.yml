@@ -6,7 +6,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,17 +13,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          node-version: '22'  # Use a recent stable Node.js version
+          python-version: '3.12'  # Use the latest available Python version
 
-      - name: Install Puppeteer
+      - name: Install dependencies
         run: |
-          npm install puppeteer
+          pip install weasyprint
+          pip install --no-cache-dir -r requirements.txt
 
       - name: Generate PDF from HTML
-        run: node generate.js
+        run: python generate.py
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
-// Function to search recursively for all 'resume.html' files
+// Function to recursively search for all 'resume.html' files
 const findHtmlFiles = (dir) => {
     let htmlFiles = [];
     const files = fs.readdirSync(dir);
@@ -10,7 +10,7 @@ const findHtmlFiles = (dir) => {
     files.forEach((file) => {
         const fullPath = path.join(dir, file);
         if (fs.lstatSync(fullPath).isDirectory()) {
-            // Recursively search subdirectories
+            // Recursively search in subdirectories
             htmlFiles = htmlFiles.concat(findHtmlFiles(fullPath));
         } else if (file === 'resume.html') {
             // Add the path to the array if it is 'resume.html'
@@ -31,7 +31,7 @@ const findHtmlFiles = (dir) => {
     }
 
     const browser = await puppeteer.launch();
-    
+
     for (const htmlFile of htmlFiles) {
         const outputPdf = path.join(path.dirname(htmlFile), 'Sidney_Lu.pdf');
         
@@ -43,13 +43,13 @@ const findHtmlFiles = (dir) => {
             await page.pdf({
                 path: outputPdf,
                 format: 'A4',
-                printBackground: true
+                printBackground: true,
             });
 
             console.log(`PDF created successfully: ${outputPdf}`);
             await page.close();
         } catch (error) {
-            console.error(`Error creating PDF for ${htmlFile}: ${error}`);
+            console.error(`Error creating PDF from '${htmlFile}': ${error}`);
         }
     }
 

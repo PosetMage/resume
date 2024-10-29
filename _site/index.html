@@ -8,7 +8,6 @@
             height: calc(100% - 5px);
             margin: 0;
             background-color: #333; /* Dark background for the whole body */
-            color: white; /* Optional: Set text color to white for better contrast */
         }
         /* Styling for the download container positioned in the top-right corner of the iframe */
         .download-container {
@@ -38,10 +37,11 @@
         /* Set a specific width and height for the iframe */
         .iframe-container {
             width: 850px; /* Fixed width for iframe */
-            height: 100%; /* Full height */
+            height: calc(100% - 10px); /* Full height */
             margin: 0 auto; /* Center the iframe horizontally */
             position: relative; /* Necessary for positioning the download container */
             background-color: white;
+            padding-top: 10px; /* Adds 15pt space above the iframe */
         }
         iframe {
             width: 100%; /* Full width of the container */
@@ -53,7 +53,7 @@
         @media (max-width: 850px) {
             .iframe-container {
                 width: calc(100% - 20px); /* Make iframe container full width on smaller screens */
-                padding: 0 10px; /* Add padding for better aesthetics */
+                padding: 10px 10px 0; /* Adjust padding for aesthetics */
             }
         }
     </style>

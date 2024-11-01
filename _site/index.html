@@ -41,12 +41,14 @@
             margin: 0 auto; /* Center the iframe horizontally */
             position: relative; /* Necessary for positioning the download container */
             background-color: white;
-            padding-top: 10px; /* Adds 15pt space above the iframe */
+            padding: 10px 10px 0; /* Adds 10px padding on left and right */
+            box-sizing: border-box; /* Ensure padding does not affect total width */
         }
         iframe {
             width: 100%; /* Full width of the container */
             height: 100%;
             border: none;
+            background-color: white;
         }
 
         /* Media query for responsive design */

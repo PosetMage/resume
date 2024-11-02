@@ -157,7 +157,7 @@ li:before {
 /* Mobile Styles */
 @media (max-width: 800px) {
     body {
-        font-size: 15pt;
+        font-size: 12pt;
         margin-right: 15px;
         margin-top: 15px;
         margin-left: 15px;

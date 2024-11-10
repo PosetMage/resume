@@ -1,15 +1,17 @@
 # Resume
 
 ## general resume
-* website: https://resume.posetmage.com/
+* cover letter: https://resume.posetmage.com/cover_letter
+* web ver: https://resume.posetmage.com/
 * pdf: https://resume.posetmage.com/Sidney_Lu.pdf
 
 ## pm resume
-* website: https://resume.posetmage.com/pm/
+* cover letter: https://resume.posetmage.com/pm/cover_letter
+* web ver: https://resume.posetmage.com/pm/
 * pdf: https://resume.posetmage.com/pm/Sidney_Lu.pdf
 
 ## AI resume
-* website: https://resume.posetmage.com/ai/
+* web ver: https://resume.posetmage.com/ai/
 * pdf: https://resume.posetmage.com/ai/Sidney_Lu.pdf
 
 ## repo concept

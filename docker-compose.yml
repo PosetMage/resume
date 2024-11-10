@@ -1,0 +1,8 @@
+services:
+  web:
+    image: nginx:alpine  # Use the Nginx image (lightweight Alpine version)
+    container_name: resume  # Name of the container
+    volumes:
+      - ./_site:/usr/share/nginx/html  # Mount ./_site/ directory to Nginx's root directory
+    ports:
+      - "7777:80"  # Expose port 80 on the container as port 8080 on the host

@@ -1,5 +1,14 @@
 # Resume
 
+* compile html to pdf:
+  * ```docker compose run --rm compile```
+* hold at local
+  * ```docker compose up resume```
+  * browse ```localhost:7777```
+* For Github-Action
+  * see ```.github/workflows```
+
+
 ## general resume
 * cover letter: https://resume.posetmage.com/cover_letter
 * web ver: https://resume.posetmage.com/

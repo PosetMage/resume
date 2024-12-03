@@ -1,8 +1,16 @@
 services:
-  web:
-    image: nginx:alpine  # Use the Nginx image (lightweight Alpine version)
-    container_name: resume  # Name of the container
+  compile:
+    container_name: compile
+    image: minidocks/weasyprint:latest
     volumes:
-      - ./_site:/usr/share/nginx/html  # Mount ./_site/ directory to Nginx's root directory
+      - ./:/app
+    working_dir: /app
+    command: python generate.py
+
+  resume:
+    image: nginx:alpine
+    container_name: resume
+    volumes:
+      - ./_site:/usr/share/nginx/html
     ports:
-      - "7777:80"  # Expose port 80 on the container as port 8080 on the host
+      - "7777:80"

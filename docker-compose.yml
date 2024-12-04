@@ -5,7 +5,7 @@ services:
     volumes:
       - ./:/app
     working_dir: /app
-    command: python generate.py
+    command: python compile.py
 
   resume:
     image: nginx:alpine
@@ -13,4 +13,4 @@ services:
     volumes:
       - ./_site:/usr/share/nginx/html
     ports:
-      - "7777:80"
+      - "127.0.0.1:7777:80"

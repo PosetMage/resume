@@ -24,7 +24,7 @@ jobs:
         run: pip install --no-cache-dir -r requirements.txt
 
       - name: Generate PDF from HTML
-        run: python generate.py
+        run: python compile.py
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

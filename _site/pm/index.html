@@ -11,7 +11,7 @@
         // Function to fetch and load the content of /index.html
         async function loadContent() {
             try {
-                const response = await fetch('/index.html'); // Fetch the content of /index.html
+                const response = await fetch('/root.html'); // Fetch the content of /index.html
                 const text = await response.text(); // Get the text content
 
                 // Create a new DOM parser
@@ -28,7 +28,7 @@
                 document.body.innerHTML = bodyContent; // Replace body content
 
             } catch (error) {
-                console.error('Error loading index.html:', error);
+                console.error('Error loading root.html:', error);
                 document.body.innerHTML = '<p>Error loading content.</p>'; // Show error message if fetch fails
             }
         }

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">      
+    <title>Sidney Lu</title>
+    <style>
+        html, body {
+            height: calc(100% - 5px);
+            margin: 0;
+            background-color: #333; /* Dark background for the whole body */
+        }
+        /* Styling for the download container positioned in the top-right corner of the iframe */
+        .download-container {
+            position: absolute;
+            top: 10px; /* Distance from the top of the iframe */
+            right: 15px; /* Distance from the right of the iframe */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 10; /* Ensures it stays on top of the iframe */
+        }
+        .download-link {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .download-link:hover {
+            text-decoration: underline;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        /* Set a specific width and height for the iframe */
+        .iframe-container {
+            width: 850px; /* Fixed width for iframe */
+            height: calc(100% - 10px); /* Full height */
+            margin: 0 auto; /* Center the iframe horizontally */
+            position: relative; /* Necessary for positioning the download container */
+            background-color: white;
+            padding: 10px 10px 0; /* Adds 10px padding on left and right */
+            box-sizing: border-box; /* Ensure padding does not affect total width */
+        }
+        iframe {
+            width: 100%; /* Full width of the container */
+            height: 100%;
+            border: none;
+            background-color: white;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 850px) {
+            .iframe-container {
+                width: calc(100% - 20px); /* Make iframe container full width on smaller screens */
+                padding: 10px 10px 0; /* Adjust padding for aesthetics */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <div class="download-container">
+            <a class="download-link" href="./Sidney_Lu.pdf" download="Sidney_Lu.pdf">
+                <img class="icon" src="https://img.icons8.com/material-outlined/24/000000/pdf.png" alt="PDF Icon"/>
+                Download PDF
+            </a>
+        </div>
+        <iframe src="./resume.html" title="Resume"></iframe>
+    </div>
+</body>
+</html>

@@ -1,15 +1,11 @@
-Dear Hiring Manager,
+Dear HR,
 
-I am writing to express my interest in the [Job Title] position at [Company Name], as advertised on [where you found the job posting]. With a strong background in product management, AI-driven development, game design, and cross-functional collaboration, I am confident in my ability to contribute effectively to your team and help drive the success of your projects.
+I'm writing to express my strong interest in Backend Engineer role. My experience as the solo engineer for system design and full-stack development at current startup team. I built and maintained the LLM workflow. This involved full ownership, using React/TypeScript for the front-end and Python for the back-end. 
 
-In my current role as a Product Manager at a startup, I have led initiatives that focus on leveraging AI-driven solutions to enhance product development and user experience. I have managed the end-to-end lifecycle of projects, utilizing Agile methodologies to ensure iterative progress that aligns with stakeholder goals. One of my proudest achievements has been the launch of Workflow-ChatBot, a tool that significantly improved inter-departmental communication and reduced operational costs.
+I also have DevOps and cloud skills. I've familiar with Linux (env include Arch, Mint), CI/CD (GitHub Actions/TeamCity), and container Docker Compose, Kubernetes, and AWS infrastructure (Lambda, EC2, ....).
 
-Additionally, my experience as a game designer and project manager has provided me with a solid foundation in developing innovative user experiences and balancing both creative and technical aspects of game production. I have successfully planned and managed game projects, collaborating with clients and internal teams to meet project timelines and budgets.
+Further, I'm expert in syetem lang C++17 in my early career. I'm adaptable, a quick learner, and solve problems effectively. I'm eager to contribute my skills to your team.
 
-At Qualcomm and HTC ViveVR, I gained hands-on experience in AR/VR development and real-time rendering, further honing my technical expertise in systems integration and performance optimization. I have also applied my skills in algorithmic trading and portfolio management, gaining experience in both AI and financial technologies.
-
-I hold a Master’s degree in Computer Science from National Chiao Tung University, with a focus on multimedia engineering, and a Bachelor’s degree in Earth Sciences from National Cheng Kung University. My diverse educational background and multi-disciplinary professional experience equip me with a unique perspective on problem-solving and innovation.
-
-I am excited about the opportunity to bring my skills and experience to [Company Name] and contribute to your vision of [company’s vision or project goal]. I would welcome the chance to discuss how my background and skills align with the needs of your team. Thank you for considering my application.
+I thrive in fast-paced environments and enjoy building efficient, high-performing systems. I’d love to discuss how I can contribute to your team. Looking forward to connecting!
 
 Sincerely,

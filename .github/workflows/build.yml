@@ -25,12 +25,13 @@ jobs:
 
       - name: Generate PDF from HTML
         run: python compile.py
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
 
       - name: Copy CNAME
         run: cp CNAME _site/ || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
 
   deploy:
     needs: build

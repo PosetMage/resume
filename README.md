@@ -3,7 +3,7 @@
 * compile html to pdf:
   * ```docker compose run --rm compile```
 * hold at local
-  * ```docker compose up resume```
+  * ```docker compose up serve```
   * browse ```localhost:7777```
 * For Github-Action
   * see ```.github/workflows```

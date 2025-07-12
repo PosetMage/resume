@@ -3,6 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches: ["main"]
+
 permissions:
   contents: read
   pages: write
@@ -11,27 +12,19 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-        
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'  # Use the latest available Python version
 
-      - name: Install dependencies
-        run: pip install --no-cache-dir -r requirements.txt
-
-      - name: Generate PDF from HTML
-        run: python compile.py
+      - name: Run compile service via Docker Compose
+        run: docker compose run --rm compile
 
       - name: Copy CNAME
         run: cp CNAME _site/ || true
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
-
 
   deploy:
     needs: build
@@ -39,6 +32,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

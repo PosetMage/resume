@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Loading content...</h1> <!-- A placeholder message while loading -->
+
+    <script>
+        // Function to fetch and load the content of /index.html
+        async function loadContent() {
+            try {
+                const response = await fetch('/root.html'); // Fetch the content of /index.html
+                const text = await response.text(); // Get the text content
+
+                // Create a new DOM parser
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(text, 'text/html'); // Parse the fetched HTML
+
+                // Get head and body content
+                const headContent = doc.head.innerHTML; // Extract head content
+                const bodyContent = doc.body.innerHTML; // Extract body content
+
+                // Insert head content into the current page's head
+                document.head.innerHTML += headContent; // Append head content
+                // Insert body content into the current page's body
+                document.body.innerHTML = bodyContent; // Replace body content
+
+            } catch (error) {
+                console.error('Error loading root.html:', error);
+                document.body.innerHTML = '<p>Error loading content.</p>'; // Show error message if fetch fails
+            }
+        }
+
+        // Call the function to load content
+        loadContent();
+    </script>
+</body>
+</html>

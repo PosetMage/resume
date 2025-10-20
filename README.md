@@ -9,10 +9,11 @@
   * see ```.github/workflows```
 
 
-## general resume
-* cover letter: https://resume.posetmage.com/cover_letter
-* web ver: https://resume.posetmage.com/
-* pdf: https://resume.posetmage.com/Sidney_Lu.pdf
+pdf to png:
+```
+pdftoppm -png resume.pdf output
+```
+
 
 
 ## repo concept source

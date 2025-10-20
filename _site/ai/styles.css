@@ -1,3 +1,4 @@
+/* Reset & base */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,8 @@ body {
     margin: 0 auto;
     font-size: 12pt;
     line-height: 1.25;
+    font-family: Arial, sans-serif;
+    color: #666; /* lighter text color */
 }
 
 @page {
@@ -18,11 +21,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #333;
+    color: #444; /* slightly darker for headings */
     margin-top: 1;
     margin-bottom: 1;
 }
 
+/* Links */
 a {
     color: inherit;
     text-decoration: underline;
@@ -33,11 +37,7 @@ a:hover {
     text-decoration: underline;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #111;
-}
-
+/* Header */
 .header {
     text-align: center;
     margin-bottom: 10px;
@@ -51,7 +51,7 @@ body {
 
 .header h2 {
     font-size: 1.2em;
-    color: #333;
+    color: #555; /* lighter than pure black */
     margin-bottom: 5px;
 }
 
@@ -63,28 +63,30 @@ body {
 }
 
 .contact-info a {
-    color: #111;
+    color: #555; /* lighter than pure black */
     text-decoration: none;
-    margin-right: 10px;  /* Adds spacing between items */
+    margin-right: 10px;  /* spacing */
 }
 
 .contact-info a:hover {
     text-decoration: underline;
 }
 
+/* Sections */
 .section {
     margin-bottom: 10px;
 }
 
 .section-title {
-    color: #777;
+    color: #888; /* lighter gray for section titles */
     font-size: 1.2em;
     text-transform: uppercase;
-    border-bottom: 2px solid #888;
+    border-bottom: 2px solid #aaa;
     margin-bottom: 3px;
     padding-bottom: 5px;
 }
 
+/* Experience */
 .experience-item {
     margin-bottom: 15px;
 }
@@ -93,25 +95,33 @@ body {
     font-size: 1.1em;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Stack items on mobile if necessary */
+    flex-wrap: wrap;
 }
 
 .duration {
-    color: #333;
+    color: #555; /* lighter text */
 }
 
 .position {
     font-style: italic;
-    color: #333;
+    color: #555; /* lighter text */
     margin-bottom: 2px;
 }
 
 .company-name {
     font-weight: bold;
     font-style: normal;
-    color: #111; /* lighter than black, same as default text */
+    color: #555; /* lighter than black, same as default text */
 }
 
+.technical-skills {
+    font-size: 0.95em;
+    color: #777; /* lighter than previous */
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+/* Lists */
 ul {
     list-style-type: none;
     padding-left: 20px;
@@ -120,23 +130,18 @@ ul {
 li {
     margin-bottom: 5px;
     position: relative;
+    color: #555; /* lighter text */
 }
 
 li:before {
     content: "•";
     position: absolute;
     left: -10px;
-    color: black;
+    color: #555; /* lighter bullet */
     font-size: 0.8em;
 }
 
-.technical-skills {
-    font-size: 0.95em;
-    color: #555;
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-}
-
+/* Education */
 .education {
     font-size: 0.95em;
     display: flex;

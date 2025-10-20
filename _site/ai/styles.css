@@ -111,7 +111,7 @@ a:hover {
 .company-name {
     font-weight: bold;
     font-style: normal;
-    color: #555; /* lighter than black, same as default text */
+    color: #666; /* lighter than black, same as default text */
 }
 
 .technical-skills {
@@ -186,4 +186,9 @@ li:before {
     .education div:last-child {
         text-align: left;
     }
+}
+
+.ai-keyword {
+    font-weight: bold;
+    color: black; /* black for contrast */
 }

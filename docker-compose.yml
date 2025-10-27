@@ -6,6 +6,7 @@ services:
       - ./:/app
     working_dir: /app
     command: python compile.py
+    profiles: ["build"]
 
   serve:
     image: nginx:alpine
@@ -13,4 +14,4 @@ services:
     volumes:
       - ./_site:/usr/share/nginx/html
     ports:
-      - "127.0.0.1:7777:80"
+      - "127.0.0.1:17780:80"

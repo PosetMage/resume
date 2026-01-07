@@ -22,7 +22,7 @@ jobs:
           python-version: '3.x'
       
       - name: Install PDF checker dependencies
-        run: pip install pypdf
+        run: pip install -r requirements.txt
       
       - name: Check PDF page counts
         run: python check_pdf_pages.py

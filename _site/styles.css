@@ -188,7 +188,7 @@ li:before {
     }
 }
 
-.ai-keyword {
+.highlight {
     font-weight: bold;
     color: black; /* black for contrast */
 }

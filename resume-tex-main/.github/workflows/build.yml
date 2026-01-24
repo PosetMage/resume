@@ -1,0 +1,44 @@
+name: Build and Deploy CV
+on:
+  push:
+    branches: ["main"]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      DIR: .
+      FILE: Sidney_Lu
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build CV
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: ${{ env.FILE }}
+          working_directory: ${{ env.DIR }}
+      - name: Move PDF
+        run: |
+          mkdir -p _site
+          mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./_site/
+      - name: Copy index.html and CNAME
+        run: |
+          cp index.html _site/ || true
+          cp CNAME _site/ || true
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}

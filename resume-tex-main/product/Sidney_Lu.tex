@@ -1,0 +1,171 @@
+%-------------------------
+% Author : Jake Gutierrez
+%------------------------
+
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage[T1]{fontenc} % higher quality font encoding
+\usepackage[sfdefault]{universalis} % load the font and set it to default
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+     \textbf{#1} & \textbf{\small #2} \\
+     \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+% New command for Technical Skills with Times New Roman
+\newcommand{\resumeTechnicalSkills}[1]{
+  {\fontfamily{ptm}\selectfont % Switch to Times New Roman
+  \resumeItem{\textsl{Technical Skills: #1}}}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Sidney Lu (CHIA-HAO)} \\ \vspace{5pt}
+    \LARGE{Product Design and Software Engineer | AI-Driven Development } \\ \vspace{7pt}
+    \normalsize \raisebox{-0.1\height}\faGlobe\ \href{https://resume.posetmage.com}{\underline{resume.posetmage.com}} ~ 
+    \href{mailto:mail@posetmage.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mail@posetmage.com}} ~     
+    \href{https://github.com/HomunMage/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/HomunMage}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+\normalsize
+\begin{itemize}[itemsep=-5pt]
+  \item[-] Adept at bridging technical expertise with strategic toolsets to achieve business goals with diverse domains.
+  \item[-] Collaborating with cross-functional teams while maintaining a strong focus on end-user experiences.
+  \item[-] Well-rounded expertise includes full-stack development, project management, game design, and UI/UX.
+  \item[-] Experience in delivering AI-driven solutions and optimizing system performance across.
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Startup }{2023 - Present}
+      {Full-Stack AI Agents Engineer, PM }{}
+      \resumeItemListStart
+        \resumeItem{Implemented AI-driven content systems with high scalability and fault tolerance using modern full-stack technologies on local PC with NVIDIA GPU. Document page: LangGraph-GUI: \underline{\href{https://langgraph-gui.github.io/}{(https://langgraph-gui.github.io/)}}}
+        \resumeItem{Product management with a focus on achieving startup strategic direction, utilizing project management tools to drive efficient execution.}
+        \resumeItem{Implemented LangGraph-ChatBot: Reduced inter-departmental communication and handover costs by implementing an AI chatbot system.}
+        \resumeItem{Implemented Visual user Friendly frontend for CrewAI. CrewAI-GUI: \underline{\href{https://github.com/LangGraph-GUI/CrewAI-GUI}{ (https://github.com/LangGraph-GUI/CrewAI-GUI)}}}
+        \resumeTechnicalSkills{ \\
+        · ai-end: Prompt Engineering, AI Agents, LLM, Ollama, LangChain, LangGraph, CrewAI \\
+        · frontend: Vue, React, JavaScript\\
+        · backend: RESTful API(Flask, FastAPI), Python \\
+        · infra: CI/CD, Docker Compose, Github-Action, Linux, Nginx, Shell Scripts}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Freelance Professional}{2023 - 2024}
+    {Game Designer, PM, Algorithmic Trading}{}
+        \resumeItemListStart
+        \resumeItem{Designed game systems and mechanics. Improved game UI/UX experience.}
+        \resumeItem{Planned game projects, managed schedules, and collaborated with customer client on game development timelines and budgets.}
+        \resumeItem{Implemented algorithmic trading strategies in cryptocurrency, integrating traditional rule-based trading methodologies.}
+        \resumeTechnicalSkills{Game Design, Project Management, Monday, Unity, C\#, TradingView, PineScript, Jekyll, JavaScript}
+        \resumeItemListEnd
+
+    \resumeSubheading
+     {Qualcomm}{2022 - 2023}
+     {Computer Vision R\&D / Systems and DSP Engineer}{}
+     \resumeItemListStart
+       \resumeItem{Developed approximation algorithms for 3D environment reconstruction, porting algorithms to mobile DSP chip, improving real-time performance.}
+       \resumeItem{Worked with cross-functional teams to streamline integration with mobile chip architecture, optimizing system modulized.}
+       \resumeTechnicalSkills{Algorithm, Computer Vision, Optimization, SIMD, C++, Python, DSP, CI / CD, Jenkins, Docker}
+     \resumeItemListEnd
+
+    \resumeSubheading
+     {HTC ViveVR}{2018 - 2021}
+     {R\&D Software Engineer / Graphics}{}
+     \resumeItemListStart
+       \resumeItem{Implemented and optimized VR algorithms for real-time rendering using DX12, ensuring high-performance, scalable solutions.}
+       \resumeItem{Optimized SDK with GPU profiling and benchmark tools such as GPUView, using Nvidia, AMD GPU hardware SDKs to speed up VR algorithms}
+       \resumeTechnicalSkills{Algorithm, VR, Computer Graphics, Optimization, SIMD, GPGPU, DX11, DX12, HLSL, C++}
+     \resumeItemListEnd
+
+     \resumeSubheading
+     {samtsai.org/thecppnews/, C++ Newsletter}{2018 - 2021}
+     {Contributing Writer, Authored technical articles about modern C++ }{}
+
+     \resumeSubheading
+     {HTC (Intern)}{2017}
+     {Software Engineer Intern, implementing machine learning algorithm in computer vision feild.}{}
+
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\begin{tabularx}{\textwidth}{X r}
+  \textbf{National Chiao Tung University}, Master of Science in Computer Science, \small{Institute of Multimedia Engineering} & \textbf{2016 - 2018} \\
+  \textbf{National Cheng Kung University}, Bachelor of Science in Earth Sciences & \textbf{2010 - 2014} \\
+\end{tabularx}
+
+
+%-----------TECHNICAL SKILLS-----------
+%\section{TECHNICAL SKILLS}
+
+\end{document}

@@ -1,0 +1,11 @@
+*synctex*
+*.png
+*.jpg
+
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.synctex.*

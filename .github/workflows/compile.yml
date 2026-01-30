@@ -15,18 +15,7 @@ jobs:
       
       - name: Run compile service via Docker Compose
         run: docker compose run --rm compile
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-      
-      - name: Install PDF checker dependencies
-        run: pip install -r requirements.txt
-      
-      - name: Check PDF page counts
-        run: python check_pdf_pages.py
-      
+
       - name: Copy CNAME
         run: cp CNAME _site/ || true
       

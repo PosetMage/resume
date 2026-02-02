@@ -1,11 +1,22 @@
-Dear HR,
+Dear Hiring Manager,
 
-I'm writing to express my strong interest in Backend Engineer role. My experience as the solo engineer for system design and full-stack development at current startup team. I built and maintained the LLM workflow. This involved full ownership, using React/TypeScript for the front-end and Python for the back-end. 
+I am writing to express my interest in the AI Engineer role. As a Founding Engineer with expertise in full-stack AI R&D, I bring a track record of delivering high-impact systems from zero to production.
 
-I also have DevOps and cloud skills. I've familiar with Linux (env include Arch, Mint), CI/CD (GitHub Actions/TeamCity), and container Docker Compose, Kubernetes, and AWS infrastructure (Lambda, EC2, ....).
+In my current role as Senior AI Engineer at Infotech, I pioneered end-to-end AI systems for banking that achieved 70% efficiency gains in financial document processing. I serve as a technical decision-maker alongside PM and architects, translating ambiguous AI initiatives into concrete, low-risk deliverables aligned with operational workflows.
 
-Further, I'm expert in syetem lang C++17 in my early career. I'm adaptable, a quick learner, and solve problems effectively. I'm eager to contribute my skills to your team.
+Previously as a Co-Founder and Founding Engineer, I led AI Agent product development that improved productivity by 10x. I built LangGraph-GUI, a zero-to-one AIGC workflow system with scalability and fault tolerance on NVIDIA GPU and cloud SaaS infrastructure.
 
-I thrive in fast-paced environments and enjoy building efficient, high-performing systems. I’d love to discuss how I can contribute to your team. Looking forward to connecting!
+My foundation in systems optimization comes from Qualcomm and HTC ViveVR, where I achieved a 75% runtime reduction in computer vision algorithms on mobile DSP and a 130% performance increase in VR rendering. These experiences shaped my ability to deliver performant solutions across the stack.
+
+Technical highlights:
+- AI/ML: Agentic AI, Prompt Engineering, LangGraph, MLOps, Computer Vision
+- Backend: Python, Go, FastAPI, PostgreSQL, pgvector
+- Infrastructure: Docker, Kubernetes, AWS, CI/CD, Linux
+- Systems: C++, SIMD, DSP optimization, GPU profiling
+
+I thrive in fast-paced environments where I can take ownership and drive technical decisions. I would welcome the opportunity to discuss how my experience can contribute to your team.
 
 Sincerely,
+Sidney Lu (Chia-Hao)
+posetmage@gmail.com
+github.com/HomunMage

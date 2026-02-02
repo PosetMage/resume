@@ -7,11 +7,3 @@ services:
     working_dir: /app
     command: python compile.py
     profiles: ["build"]
-
-  serve:
-    image: nginx:alpine
-    container_name: resume-server
-    volumes:
-      - ./_site:/usr/share/nginx/html
-    ports:
-      - "127.0.0.1:17780:80"

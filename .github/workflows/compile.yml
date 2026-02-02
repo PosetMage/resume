@@ -1,17 +1,20 @@
 name: Build and Deploy
+
 on:
   push:
     branches: ["main"]
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
       
       - name: Run compile service via Docker Compose
         run: docker compose run --rm compile

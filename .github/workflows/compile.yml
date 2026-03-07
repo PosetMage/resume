@@ -19,9 +19,6 @@ jobs:
       - name: Run compile service via Docker Compose
         run: docker compose run --rm compile
 
-      - name: Copy CNAME
-        run: cp CNAME _site/ || true
-      
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
   
